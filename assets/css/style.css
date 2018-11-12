@@ -1,0 +1,14 @@
+.crystals {
+    justify-content: space-around;
+    /* border: 5px solid green; */
+    /* Use Flexbox to center crystals */
+    display: flex;
+    align-items: center;
+}
+
+.crystal {
+
+    border: 2px solid blue;
+    height: 200px;
+    width: 200px;
+}

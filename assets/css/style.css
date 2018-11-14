@@ -1,3 +1,9 @@
+.p {
+    justify-content : space-around;
+    display: flex;
+    align-items: center;
+}
+
 .crystals {
     justify-content: space-around;
     /* border: 5px solid green; */
@@ -11,4 +17,28 @@
     border: 2px solid blue;
     height: 200px;
     width: 200px;
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+}
+#wins {
+    background: blue;
+    height: 75px;
+    width: 200px;
+}
+
+#losses {
+    background: red;
+    height: 75px;
+    width: 200px;
+}
+
+#targetScore {
+    border: 5px solid;
+    background: green;
+    height: 75px;
+    width: 200px;
+    text-align: center;
 }

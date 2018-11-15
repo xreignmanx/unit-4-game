@@ -43,23 +43,33 @@ var beginGame = function () {
     
     //When a crystal is clicked, a GEM VALUE will be added to the players GEM BAG
     //add 'onClick' to crystal to log cyrstal value
-$   (".crystal").on('click', function() {
+
+
+// $   (".crystal").on('click', function() 
+        // OnClick does not work when clearing trhe divs
+        // Must create and event delegation to grab existing info from old divs
+        $(document).on('click', ".crystal", function() {
+
+
+
     //Create number variable for crystal values as a numeric value (parseInt)
         var num = parseInt($(this).attr('crystalValue'));
         gemBag += num;
-        console.log(gemBag);
+       $("#gemBag").html(gemBag);
   
 
     //Set increment and totals for wins/losses
     if(gemBag > heaftySack) {
         losses ++;
         $("#losses").html('losses: ' + losses);
+        gemBag = 0;
         beginGame();
     }
 
     else if(gemBag === heaftySack) {
         wins ++;
         $("#wins").html('wins : ' + wins); 
+        gemBag = 0;
         beginGame();
     } 
 });

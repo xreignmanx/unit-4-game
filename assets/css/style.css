@@ -1,7 +1,25 @@
+h1 {
+    font-family: serif;
+    background: green;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.gemCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 40px;
+  
+    font-family: serif;
+}
 .p {
-    justify-content : space-around;
+    justify-content : flex-start;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .crystals {
@@ -22,23 +40,38 @@
 #score {
     display: flex;
     flex-direction: column;
+    
 }
 #wins {
     background: blue;
-    height: 75px;
+    height: 100px;
     width: 200px;
+    margin: 0;
 }
 
 #losses {
     background: red;
-    height: 75px;
+    height: 100px;
     width: 200px;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 #targetScore {
-    border: 5px solid;
     background: green;
-    height: 75px;
-    width: 200px;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+#gemBag {
+    background: green;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: column;
     text-align: center;
 }
